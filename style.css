@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    flex: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_one{
+    display: flex;
+    justify-content: center;
+}
+
+.block_information{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.information_cards{
+    display: flex;
+    justify-content: center;
+}
+
+.citation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.block_cta{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    text-align: center;
+}
