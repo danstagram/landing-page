@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -14,14 +14,21 @@ li{
 a{
     text-decoration: none;
     color: white;
+    font-size: 12px;
 }
 
-button{
+.block_one_left button{
     background-color: #3882f6;
     color: white;
     border: none;
     padding: 6px 24px;
     border-radius: 6px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: white;
+    color: #3882f6;
 }
 
 .header{
@@ -39,6 +46,7 @@ button{
 
 .header_right{
     display: flex;
+    gap: 15px;
 }
 
 .block_one{
@@ -46,6 +54,24 @@ button{
     justify-content: center;
     background-color: #1f2937;
     color: white;
+    padding: 80px 150px;
+    gap: 30px
+}
+
+.block_one_left{
+    display: flex;
+    flex-direction: column;   
+    gap: 10px; 
+}
+
+.block_one_right{
+    background-color: grey;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .text_title{
@@ -54,10 +80,17 @@ button{
     font-size: 48px;
 }
 
+.text_subtext{
+    color: #f9faf8;
+    font-weight: lighter;
+}
+
 .block_information{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 40px 150px;
+    gap: 20px;
 }
 
 .information_title{
@@ -69,32 +102,91 @@ button{
 .information_cards{
     display: flex;
     justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card_image{
+    border: #3882f6;
+    border-style: solid;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
 }
 
 .citation{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     background-color: #e5e7eb;
+    padding: 90px 170px 70px;
 }
 
 .citation_text{
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+    padding-bottom: 20px;
 }
 
 .citation_author{
     font-size: 18px;
     font-weight: bold;
+    text-align: right;
 }
 
 .block_cta{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background-color: #3882f6;
+    margin: 60px 150px;
+    gap: 20px;
+}
+
+.cta_text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.cta_text_title{
+    font-weight: bold;
+}
+
+.cta_text_text{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.cta_button button{
+    background-color: #3882f6;
+    color: white;
+    border: solid;
+    border-width: 2px;
+    padding: 6px 24px;
+    border-radius: 6px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: white;
+    color: #3882f6;
 }
 
 .footer{
     text-align: center;
     margin-top: auto;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px 150px;
+    font-size: 12px;
 }
